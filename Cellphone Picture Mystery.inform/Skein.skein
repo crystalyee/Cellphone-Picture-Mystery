@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x26f6f0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x570c980" />
+  <item nodeId="node-0x26f6f0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+Cellphone Picture Mystery
+An Interactive Fiction by Crystal Yee
+Release 1 / Serial number 130228 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Rocky Field
+A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="44">NO</temporary>
+    <children>
+      <child nodeId="node-0x9047c80" />
+      <child nodeId="node-0x57c9ba0" />
+      <child nodeId="node-0x57f6bc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x57f6bc0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="31">YES</temporary>
+  </item>
+  <item nodeId="node-0x57c9ba0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Tree Lined Trail
+A fairly normal hiking trail full of pine trees. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="44">YES</temporary>
+    <children>
+      <child nodeId="node-0x59e8b0" />
+      <child nodeId="node-0xd138200" />
+      <child nodeId="node-0x94dfc80" />
+      <child nodeId="node-0xcf45c30" />
+    </children>
+  </item>
+  <item nodeId="node-0xcf45c30">
+    <command xml:space="preserve">take rock</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x9428030" />
+    </children>
+  </item>
+  <item nodeId="node-0x9428030">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x517bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x517bb0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest trail
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x5ad330" />
+    </children>
+  </item>
+  <item nodeId="node-0x5ad330">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  rock
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x57de060" />
+    </children>
+  </item>
+  <item nodeId="node-0x57de060">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Bridge
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x5774350" />
+    </children>
+  </item>
+  <item nodeId="node-0x5774350">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="16">YES</temporary>
+  </item>
+  <item nodeId="node-0x94dfc80">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">
+Forest Clearing
+Sunlight filters through the leaves of the trees above. You can see the Tree Lined Trail to the southwest and a Waterfall to the southeast.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="44">YES</temporary>
+    <children>
+      <child nodeId="node-0x200820" />
+      <child nodeId="node-0x57e0970" />
+    </children>
+  </item>
+  <item nodeId="node-0x57e0970">
+    <command xml:space="preserve">sw</command>
+    <result xml:space="preserve">
+Tree Lined Trail
+A fairly normal hiking trail full of pine trees. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="37">YES</temporary>
+    <children>
+      <child nodeId="node-0x55b410" />
+    </children>
+  </item>
+  <item nodeId="node-0x55b410">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Bridge
+A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="37">YES</temporary>
+    <children>
+      <child nodeId="node-0xcf846e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xcf846e0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Waterfall
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="36">YES</temporary>
+  </item>
+  <item nodeId="node-0x200820">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">
+Waterfall
+A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="44">YES</temporary>
+    <children>
+      <child nodeId="node-0x5507e0" />
+      <child nodeId="node-0xcf45cb0" />
+    </children>
+  </item>
+  <item nodeId="node-0xcf45cb0">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">
+Forest Clearing
+Sunlight filters through the leaves of the trees above. You can see the Tree Lined Trail to the southwest and a Waterfall to the southeast.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="44">YES</temporary>
+    <children>
+      <child nodeId="node-0x5e1180" />
+    </children>
+  </item>
+  <item nodeId="node-0x5e1180">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">
+Waterfall
+A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="44">YES</temporary>
+    <children>
+      <child nodeId="node-0x57e9270" />
+    </children>
+  </item>
+  <item nodeId="node-0x57e9270">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Bridge
+A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="44">YES</temporary>
+    <children>
+      <child nodeId="node-0x570c980" />
+    </children>
+  </item>
+  <item nodeId="node-0x570c980">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Tree Lined Trail
+A fairly normal hiking trail full of pine trees. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="43">YES</temporary>
+  </item>
+  <item nodeId="node-0x5507e0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Rocky Field
+A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Bridge to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="22">YES</temporary>
+  </item>
+  <item nodeId="node-0xd138200">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Rocky Field
+A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Bridge to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="31">YES</temporary>
+    <children>
+      <child nodeId="node-0x5707ff0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5707ff0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Tree Lined Trail
+A fairly normal hiking trail full of pine trees. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="31">YES</temporary>
+    <children>
+      <child nodeId="node-0x57d8cb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x57d8cb0">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">
+Forest Clearing
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="31">YES</temporary>
+    <children>
+      <child nodeId="node-0x5714110" />
+    </children>
+  </item>
+  <item nodeId="node-0x5714110">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">
+Bridge
+A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="31">YES</temporary>
+    <children>
+      <child nodeId="node-0x903a250" />
+    </children>
+  </item>
+  <item nodeId="node-0x903a250">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">
+Forest Clearing
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="30">YES</temporary>
+  </item>
+  <item nodeId="node-0x59e8b0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Bridge
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="10">YES</temporary>
+    <children>
+      <child nodeId="node-0x275390" />
+    </children>
+  </item>
+  <item nodeId="node-0x275390">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Forest trail
+You can see rock here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="10">YES</temporary>
+    <children>
+      <child nodeId="node-0x5724470" />
+    </children>
+  </item>
+  <item nodeId="node-0x5724470">
+    <command xml:space="preserve">take rock</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="10">YES</temporary>
+    <children>
+      <child nodeId="node-0x214720" />
+    </children>
+  </item>
+  <item nodeId="node-0x214720">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="9">YES</temporary>
+  </item>
+  <item nodeId="node-0x9047c80">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="4">YES</temporary>
+  </item>
+</Skein>
