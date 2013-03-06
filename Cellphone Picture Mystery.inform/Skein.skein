@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x26f6f0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0xa4be110" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x570c980" />
-  <item nodeId="node-0x26f6f0">
+  <activeNode nodeId="node-0xa4be110" />
+  <item nodeId="node-0xa4be110">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -10,31 +10,183 @@
 
 Cellphone Picture Mystery
 An Interactive Fiction by Crystal Yee
-Release 1 / Serial number 130228 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 130306 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Rocky Field
-A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north.
+A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.
+
+You can see Keycard here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="44">NO</temporary>
+    <temporary score="7">NO</temporary>
     <children>
-      <child nodeId="node-0x9047c80" />
-      <child nodeId="node-0x57c9ba0" />
-      <child nodeId="node-0x57f6bc0" />
+      <child nodeId="node-0x95eaa10" />
+      <child nodeId="node-0xd573220" />
+      <child nodeId="node-0xa4c65a0" />
+      <child nodeId="node-0xa4bf8c0" />
+      <child nodeId="node-0xa4be160" />
     </children>
   </item>
-  <item nodeId="node-0x57f6bc0">
+  <item nodeId="node-0xa4be160">
+    <command xml:space="preserve">take keycard</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4bde50" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4bde50">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You can&apos;t go that way.
+    <result xml:space="preserve">
+Grassy Meadow
+Patches of grass and wildflowers fill the meadow. It&apos;s surrounded by a rather tall fence. You can see a gate to the west.
+
+You can see Gate here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4bdea0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4bdea0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening Gate)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4bd620" />
+      <child nodeId="node-0xa4bd5d0" />
+      <child nodeId="node-0x9439d70" />
+    </children>
+  </item>
+  <item nodeId="node-0x9439d70">
+    <command xml:space="preserve">unlock gate</command>
+    <result xml:space="preserve">(with Keycard)
+As you put the key into the Digital Lock, a Screen lights up prompting you for a four digit code. The hint is &quot;the last four digits of your phone number&quot;.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="31">YES</temporary>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x94ddf00" />
+    </children>
   </item>
-  <item nodeId="node-0x57c9ba0">
+  <item nodeId="node-0x94ddf00">
+    <command xml:space="preserve">input 2302 into the Digital Lock</command>
+    <result xml:space="preserve">You hear a wonderful chiming sound as the screen fades to black and the Digital Lock opens .
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x89479c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x89479c0">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">You open Gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="6">YES</temporary>
+  </item>
+  <item nodeId="node-0xa4bd5d0">
+    <command xml:space="preserve">open gate with keycard</command>
+    <result xml:space="preserve">You unlock Gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+  </item>
+  <item nodeId="node-0xa4bd620">
+    <command xml:space="preserve">unlock gate with keycard</command>
+    <result xml:space="preserve">As you enter the key into the Digital Lock, a Screen lights up prompting you for a four digit code. The hint is &quot;the last four digits of your phone number&quot;.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="71">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4d1e00" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4d1e00">
+    <command xml:space="preserve">unlock gate with keycard</command>
+    <result xml:space="preserve">You unlock Gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="70">YES</temporary>
+  </item>
+  <item nodeId="node-0xa4bf8c0">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4bf910" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4bf910">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grassy Meadow
+Patches of grass and wildflowers fill the meadow. It&apos;s surrounded by a rather tall fence. You can see a gate to the west.
+
+You can see Gate here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4bbd30" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4bbd30">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening Gate)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4bbd80" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4bbd80">
+    <command xml:space="preserve">open gate with key</command>
+    <result xml:space="preserve">That doesn&apos;t seem to fit the lock.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="53">YES</temporary>
+  </item>
+  <item nodeId="node-0xa4c65a0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -45,23 +197,23 @@ A fairly normal hiking trail full of pine trees. You can see the a Rocky Field t
     <changed>NO</changed>
     <temporary score="44">YES</temporary>
     <children>
-      <child nodeId="node-0x59e8b0" />
-      <child nodeId="node-0xd138200" />
-      <child nodeId="node-0x94dfc80" />
-      <child nodeId="node-0xcf45c30" />
+      <child nodeId="node-0xd56a680" />
+      <child nodeId="node-0xd572ff0" />
+      <child nodeId="node-0xa40f250" />
+      <child nodeId="node-0xa40bb60" />
     </children>
   </item>
-  <item nodeId="node-0xcf45c30">
+  <item nodeId="node-0xa40bb60">
     <command xml:space="preserve">take rock</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="17">YES</temporary>
     <children>
-      <child nodeId="node-0x9428030" />
+      <child nodeId="node-0xa40bbb0" />
     </children>
   </item>
-  <item nodeId="node-0x9428030">
+  <item nodeId="node-0xa40bbb0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -70,10 +222,10 @@ A fairly normal hiking trail full of pine trees. You can see the a Rocky Field t
     <changed>YES</changed>
     <temporary score="17">YES</temporary>
     <children>
-      <child nodeId="node-0x517bb0" />
+      <child nodeId="node-0xa4bb510" />
     </children>
   </item>
-  <item nodeId="node-0x517bb0">
+  <item nodeId="node-0xa4bb510">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Forest trail
 
@@ -82,10 +234,10 @@ A fairly normal hiking trail full of pine trees. You can see the a Rocky Field t
     <changed>YES</changed>
     <temporary score="17">YES</temporary>
     <children>
-      <child nodeId="node-0x5ad330" />
+      <child nodeId="node-0xa40cd60" />
     </children>
   </item>
-  <item nodeId="node-0x5ad330">
+  <item nodeId="node-0xa40cd60">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   rock
@@ -95,10 +247,10 @@ A fairly normal hiking trail full of pine trees. You can see the a Rocky Field t
     <changed>YES</changed>
     <temporary score="17">YES</temporary>
     <children>
-      <child nodeId="node-0x57de060" />
+      <child nodeId="node-0xa40cdb0" />
     </children>
   </item>
-  <item nodeId="node-0x57de060">
+  <item nodeId="node-0xa40cdb0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Bridge
@@ -108,10 +260,10 @@ Bridge
     <changed>YES</changed>
     <temporary score="17">YES</temporary>
     <children>
-      <child nodeId="node-0x5774350" />
+      <child nodeId="node-0xa40f200" />
     </children>
   </item>
-  <item nodeId="node-0x5774350">
+  <item nodeId="node-0xa40f200">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -120,7 +272,7 @@ Bridge
     <changed>YES</changed>
     <temporary score="16">YES</temporary>
   </item>
-  <item nodeId="node-0x94dfc80">
+  <item nodeId="node-0xa40f250">
     <command xml:space="preserve">ne</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -131,11 +283,11 @@ Sunlight filters through the leaves of the trees above. You can see the Tree Lin
     <changed>YES</changed>
     <temporary score="44">YES</temporary>
     <children>
-      <child nodeId="node-0x200820" />
-      <child nodeId="node-0x57e0970" />
+      <child nodeId="node-0xa4092c0" />
+      <child nodeId="node-0xa40f510" />
     </children>
   </item>
-  <item nodeId="node-0x57e0970">
+  <item nodeId="node-0xa40f510">
     <command xml:space="preserve">sw</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -146,10 +298,10 @@ A fairly normal hiking trail full of pine trees. You can see the a Rocky Field t
     <changed>YES</changed>
     <temporary score="37">YES</temporary>
     <children>
-      <child nodeId="node-0x55b410" />
+      <child nodeId="node-0xa40af80" />
     </children>
   </item>
-  <item nodeId="node-0x55b410">
+  <item nodeId="node-0xa40af80">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Bridge
@@ -160,10 +312,10 @@ A rope bridge built atop a flowing river. It occasionally sways from side to sid
     <changed>YES</changed>
     <temporary score="37">YES</temporary>
     <children>
-      <child nodeId="node-0xcf846e0" />
+      <child nodeId="node-0xa40b270" />
     </children>
   </item>
-  <item nodeId="node-0xcf846e0">
+  <item nodeId="node-0xa40b270">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Waterfall
@@ -173,7 +325,7 @@ Waterfall
     <changed>YES</changed>
     <temporary score="36">YES</temporary>
   </item>
-  <item nodeId="node-0x200820">
+  <item nodeId="node-0xa4092c0">
     <command xml:space="preserve">se</command>
     <result xml:space="preserve">
 Waterfall
@@ -184,11 +336,11 @@ A huge waterfall roars above. You can see the Bridge to the west and the Forest 
     <changed>YES</changed>
     <temporary score="44">YES</temporary>
     <children>
-      <child nodeId="node-0x5507e0" />
-      <child nodeId="node-0xcf45cb0" />
+      <child nodeId="node-0xa412ae0" />
+      <child nodeId="node-0xa409010" />
     </children>
   </item>
-  <item nodeId="node-0xcf45cb0">
+  <item nodeId="node-0xa409010">
     <command xml:space="preserve">nw</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -199,10 +351,10 @@ Sunlight filters through the leaves of the trees above. You can see the Tree Lin
     <changed>YES</changed>
     <temporary score="44">YES</temporary>
     <children>
-      <child nodeId="node-0x5e1180" />
+      <child nodeId="node-0xa406280" />
     </children>
   </item>
-  <item nodeId="node-0x5e1180">
+  <item nodeId="node-0xa406280">
     <command xml:space="preserve">se</command>
     <result xml:space="preserve">
 Waterfall
@@ -213,10 +365,10 @@ A huge waterfall roars above. You can see the Bridge to the west and the Forest 
     <changed>YES</changed>
     <temporary score="44">YES</temporary>
     <children>
-      <child nodeId="node-0x57e9270" />
+      <child nodeId="node-0xa411aa0" />
     </children>
   </item>
-  <item nodeId="node-0x57e9270">
+  <item nodeId="node-0xa411aa0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Bridge
@@ -227,10 +379,10 @@ A rope bridge built atop a flowing river. It occasionally sways from side to sid
     <changed>YES</changed>
     <temporary score="44">YES</temporary>
     <children>
-      <child nodeId="node-0x570c980" />
+      <child nodeId="node-0xa411af0" />
     </children>
   </item>
-  <item nodeId="node-0x570c980">
+  <item nodeId="node-0xa411af0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -241,7 +393,7 @@ A fairly normal hiking trail full of pine trees. You can see the a Rocky Field t
     <changed>YES</changed>
     <temporary score="43">YES</temporary>
   </item>
-  <item nodeId="node-0x5507e0">
+  <item nodeId="node-0xa412ae0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Rocky Field
@@ -252,7 +404,7 @@ A dirt covered field with rocks scattered about. A high cliff looms above castin
     <changed>YES</changed>
     <temporary score="22">YES</temporary>
   </item>
-  <item nodeId="node-0xd138200">
+  <item nodeId="node-0xd572ff0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Rocky Field
@@ -263,10 +415,10 @@ A dirt covered field with rocks scattered about. A high cliff looms above castin
     <changed>NO</changed>
     <temporary score="31">YES</temporary>
     <children>
-      <child nodeId="node-0x5707ff0" />
+      <child nodeId="node-0xd5736f0" />
     </children>
   </item>
-  <item nodeId="node-0x5707ff0">
+  <item nodeId="node-0xd5736f0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -277,10 +429,10 @@ A fairly normal hiking trail full of pine trees. You can see the a Rocky Field t
     <changed>YES</changed>
     <temporary score="31">YES</temporary>
     <children>
-      <child nodeId="node-0x57d8cb0" />
+      <child nodeId="node-0xd573740" />
     </children>
   </item>
-  <item nodeId="node-0x57d8cb0">
+  <item nodeId="node-0xd573740">
     <command xml:space="preserve">ne</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -290,10 +442,10 @@ Forest Clearing
     <changed>YES</changed>
     <temporary score="31">YES</temporary>
     <children>
-      <child nodeId="node-0x5714110" />
+      <child nodeId="node-0xa4006e0" />
     </children>
   </item>
-  <item nodeId="node-0x5714110">
+  <item nodeId="node-0xa4006e0">
     <command xml:space="preserve">se</command>
     <result xml:space="preserve">
 Bridge
@@ -304,10 +456,10 @@ A rope bridge built atop a flowing river. It occasionally sways from side to sid
     <changed>YES</changed>
     <temporary score="31">YES</temporary>
     <children>
-      <child nodeId="node-0x903a250" />
+      <child nodeId="node-0xd56a630" />
     </children>
   </item>
-  <item nodeId="node-0x903a250">
+  <item nodeId="node-0xd56a630">
     <command xml:space="preserve">nw</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -317,7 +469,7 @@ Forest Clearing
     <changed>YES</changed>
     <temporary score="30">YES</temporary>
   </item>
-  <item nodeId="node-0x59e8b0">
+  <item nodeId="node-0xd56a680">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Bridge
@@ -327,10 +479,10 @@ Bridge
     <changed>YES</changed>
     <temporary score="10">YES</temporary>
     <children>
-      <child nodeId="node-0x275390" />
+      <child nodeId="node-0xa4c60c0" />
     </children>
   </item>
-  <item nodeId="node-0x275390">
+  <item nodeId="node-0xa4c60c0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Forest trail
@@ -341,20 +493,20 @@ You can see rock here.
     <changed>YES</changed>
     <temporary score="10">YES</temporary>
     <children>
-      <child nodeId="node-0x5724470" />
+      <child nodeId="node-0xa401210" />
     </children>
   </item>
-  <item nodeId="node-0x5724470">
+  <item nodeId="node-0xa401210">
     <command xml:space="preserve">take rock</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="10">YES</temporary>
     <children>
-      <child nodeId="node-0x214720" />
+      <child nodeId="node-0xa401260" />
     </children>
   </item>
-  <item nodeId="node-0x214720">
+  <item nodeId="node-0xa401260">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -363,7 +515,124 @@ You can see rock here.
     <changed>YES</changed>
     <temporary score="9">YES</temporary>
   </item>
-  <item nodeId="node-0x9047c80">
+  <item nodeId="node-0xd573220">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grassy Meadow
+Patches of grass and wildflowers fill the meadow. It&apos;s surrounded by a rather tall fence. You can see a gate to the west.
+
+You can see Gate here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xd573880" />
+    </children>
+  </item>
+  <item nodeId="node-0xd573880">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening Gate)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4b82e0" />
+      <child nodeId="node-0xd5738d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xd5738d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Rocky Field
+A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.
+
+You can see Keycard here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xa457580" />
+    </children>
+  </item>
+  <item nodeId="node-0xa457580">
+    <command xml:space="preserve">take keycard</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xa42bb20" />
+    </children>
+  </item>
+  <item nodeId="node-0xa42bb20">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grassy Meadow
+Patches of grass and wildflowers fill the meadow. It&apos;s surrounded by a rather tall fence. You can see a gate to the west.
+
+You can see Gate here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xa42bb70" />
+    </children>
+  </item>
+  <item nodeId="node-0xa42bb70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening Gate)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x9573210" />
+    </children>
+  </item>
+  <item nodeId="node-0x9573210">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x9573280" />
+    </children>
+  </item>
+  <item nodeId="node-0x9573280">
+    <command xml:space="preserve">open gate with keycard</command>
+    <result xml:space="preserve">As you enter the key into the Digital Lock, a Screen lights up prompting you for a four digit code. The hint is &quot;the last four digits of your phone number&quot;
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="65">YES</temporary>
+  </item>
+  <item nodeId="node-0xa4b82e0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening Gate)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+  </item>
+  <item nodeId="node-0x95eaa10">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
