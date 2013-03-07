@@ -5,16 +5,41 @@
 Keycard is a thing. 
 Keycard is in Rocky Field. 
 
+
 Rocky Field is a room. 
 Description of Rocky Field is "A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.".
 
 Tree Lined Trail is a room. 
 Tree Lined Trail is north of Rocky Field. 
-Description of Tree Lined Trail is "A fairly normal hiking trail full of pine trees. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.".
+Description of Tree Lined Trail is "A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on the left hand side of the trail. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.".
+Bush is scenery supporter.
+Bush is in Tree Lined Trail. 
+Description of bush is "A bush that would fit right in to a suburban garden but looks out of place here. You can see a large metalic thing under the bush.".  
+Saw is a thing in Tree Lined Trail. 
+Saw is undescribed. 
+
+Description of Saw is "It's a large metal saw that looks useful for cutting". 
+Understand "metalic thing" as saw. 
+Understand "large metalic thing" as saw. 
+
+[cutting]
+Understand "cut [something] with [something]" as cutting it with. 
+Cutting it with is an action applying to two things. 
+
+Report cutting it with:
+	If the noun is the rope, say "You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there's a vast gap in the bridge's place."; move the player to Waterfall. 
+Report cutting it with:
+	If the noun is not rope, say "It wouldn't be wise to cut that.". 
+Instead of cutting when the player is not holding saw: say "I don't have a saw.".
+
 
 Bridge is a room. 
 Bridge is east of Tree Lined Trail. 
 Description of Bridge is "A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.".
+Rope is a thing in Bridge. 
+Rope is undescribed. 
+Understand "Bridge" as rope. 
+
 
 Waterfall is a room.
 Waterfall is east of Bridge. 
