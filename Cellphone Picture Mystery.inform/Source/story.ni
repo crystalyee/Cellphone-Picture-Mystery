@@ -1,5 +1,6 @@
 "Cellphone Picture Mystery" by Crystal Yee
 
+The description of the player is "You can't remember anything about yourself whether it's your name or how you look. Your head hurts a bit suggesting that your amnesia comes from blunt force trauma.". 
 
 [items]
 Keycard is a thing. 
@@ -27,7 +28,7 @@ Understand "cut [something] with [something]" as cutting it with.
 Cutting it with is an action applying to two things. 
 
 Report cutting it with:
-	If the noun is the rope, say "You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there's a vast gap in the bridge's place."; move the player to Waterfall. 
+	If the noun is the rope, say "You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there's a vast gap in the bridge's place."; move the player to Waterfall; now the rope is broken. 
 Report cutting it with:
 	If the noun is not rope, say "It wouldn't be wise to cut that.". 
 Instead of cutting when the player is not holding saw: say "I don't have a saw.".
@@ -38,12 +39,22 @@ Bridge is east of Tree Lined Trail.
 Description of Bridge is "A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.".
 Rope is a thing in Bridge. 
 Rope is undescribed. 
+A thing can be unbroken or broken. 
+Rope is unbroken. 
 Understand "Bridge" as rope. 
 
+Instead of going west when the player is in Waterfall:
+	if the rope is broken:
+		say "Without the bridge it's impossible to cross.";
+	otherwise:
+		continue the action. 
 
 Waterfall is a room.
 Waterfall is east of Bridge. 
 Description of Waterfall is "A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.".
+Telescope is a thing in Waterfall. 
+Description of telescope is "A telescope pointed towards nearby scenery. It's so detailed you can see individual leaves on trees.".
+After examining telescope when rope is broken: say "There's a large gap where the bridge used to be.". 
 
 Forest Clearing is a room. 
 Forest Clearing is northeast of Tree Lined Trail. 
@@ -74,7 +85,9 @@ After inputting 2302 into the Digital Lock:
 Inputting is an action applying to one number. 
 Understand "input [a number]" as inputting. 
 After inputting 2302: say "You hear a wonderful chiming sound as the screen fades to black and the Digital Lock opens .";
-		now the Gate is unlocked. 
+		now the Digital Lock is switched off. 		
+
+Instead of unlocking gate with Keycard when Digital Lock is switched on: say "You need to 'input a four digit code into the Digital Lock'. There's a hint below saying 'the last four digits'. If I thought the password maker was a minimalist, I might 'input 1111 into the Digital Lock'. ".
  
 Screen is a device.
 Screen is switched off.  
