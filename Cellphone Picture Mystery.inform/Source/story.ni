@@ -2,9 +2,11 @@
 
 The description of the player is "You can't remember anything about yourself whether it's your name or how you look. Your head hurts a bit suggesting that your amnesia comes from blunt force trauma.". 
 
+
+
+
 [items]
 Keycard is a thing. 
-Keycard is in Rocky Field. 
 
 
 Rocky Field is a room. 
@@ -28,7 +30,7 @@ Understand "cut [something] with [something]" as cutting it with.
 Cutting it with is an action applying to two things. 
 
 Report cutting it with:
-	If the noun is the rope, say "You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there's a vast gap in the bridge's place."; move the player to Waterfall; now the rope is broken. 
+	If the noun is the rope, say "You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there's a vast gap in the bridge's place."; move the player to Waterfall; move Stranger to Forest Clearing; now the rope is broken. 
 Report cutting it with:
 	If the noun is not rope, say "It wouldn't be wise to cut that.". 
 Instead of cutting when the player is not holding saw: say "I don't have a saw.".
@@ -43,10 +45,16 @@ A thing can be unbroken or broken.
 Rope is unbroken. 
 Understand "Bridge" as rope. 
 
+[making the bridge inaccesible]
 Instead of going west when the player is in Waterfall:
 	if the rope is broken:
 		say "Without the bridge it's impossible to cross.";
 	otherwise:
+		continue the action. 
+Instead of going east when the player is in Tree Lined Trail:
+	if the rope is broken:
+		say "Without the bridge it's impossible to cross";
+	otherwise: 
 		continue the action. 
 
 Waterfall is a room.
@@ -63,7 +71,62 @@ Description of Forest Clearing is "Sunlight filters through the leaves of the tr
 
 Grassy Meadow is a room. 
 Grassy Meadow is west of Rocky Field. 
-Description of Grassy Meadow is "Patches of grass and wildflowers fill the meadow. It's surrounded by a rather tall fence. You can see a gate to the west.".
+Description of Grassy Meadow is "Patches of grass and wildflowers fill the meadow. It's surrounded by a rather tall fence. You can see a gate to the west and a pathway leading to the south.".
+
+[NPC]
+Talking to is an action applying to one thing. 
+Understand "talk to [someone]" as talking to. 
+Stranger is a man. 
+Landon is a man. 
+Stranger is in Forest Clearing. 
+Instead of talking to Stranger when the player is in Forest Clearing:
+	if the rope is unbroken:
+		say "'Shoots it's her' Stranger mutters before running towards the Tree Lined Trail.";
+		now Stranger is in Tree Lined Trail;
+	otherwise:
+		say "'Shoots it's her' Stranger mutters before running towards the Tree Lined Trail.";
+		now Stranger is in Tree Lined Trail. 
+Instead of talking to Stranger when the player is in Tree Lined Trail:
+	if the rope is unbroken:
+		say "'Shoots it's her' Stranger mutters before running towards the Bridge.";
+		now Stranger is in Bridge;
+	otherwise:
+		say "Stranger gawks at the broken bridge and runs towards the Rocky Field instead";
+		now Stranger is in Rocky Field. 
+Instead of talking to Stranger when the player is in Bridge:
+	if the rope is unbroken:
+		say "'Shoots it's her' Stranger mutters before running towards the Waterfall.";
+		now Stranger is in Waterfall; 
+Instead of talking to Stranger when the player is in Waterfall:
+	if the rope is unbroken:
+		say "'Shoots it's her' Stranger mutters before running towards the Forest Clearing.";
+		now Stranger is in Forest Clearing;
+Instead of talking to Stranger when the player is in Rocky Field:
+	say "'You're a persistant one' Stranger mutters as he sprints towards the grassy meadow";
+	now Stranger is in Grassy Meadow.  
+Instead of talking to Stranger when the player is in Grassy Meadow:
+	say "'You're a persistant one' Stranger mutters as he sprints towards the southern path";
+	now Stranger is in Cliff. 
+Instead of talking to Stranger: say "After taking a look around, the Stranger sees that there is no where to run and resigns himself to his fate.";
+say " 'What are the chances that we'd end up here' he mutters to himself as you walk towards him.";
+say "'Who are you?' you ask.";
+say "'What?!?'";
+say "'I swear, I never even met you but you keep on running away'";
+say "'…'";
+say "'I think I lost my memory but for some reason I have pictures of you in my phone. Do you have any idea about who I am?'";
+say "'I see… You are not someone I know personally I am not against cooperating with you to get out of this place.";
+say "You agree to cooperate with the stranger.";	
+say "By the way, my name is Landon the stanger says.";
+now Stranger is off-stage;
+now Landon is in Cliff. 
+
+After talking to Landon for the first time: say "Landon shuffles with the backpack he's wearing and passes you a keycard. 'This activates something in the gate, but doesn't open it' he says.";
+now the player is holding keycard. 
+[Cliff]
+
+Cliff is a room. 
+Cliff is south of Grassy Meadow. 
+Description of Cliff is "A sheer cliff overlooking the Grassy Meadow.". 
 
 [Gate]
 Gate is a door.
