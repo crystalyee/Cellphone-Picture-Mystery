@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0xf7dc600" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0xf7df0d0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0xf7dc600" />
-  <item nodeId="node-0xf7dc600">
+  <activeNode nodeId="node-0x174bcc10" />
+  <item nodeId="node-0xf7df0d0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -10,8 +10,92 @@
 
 Cellphone Picture Mystery
 An Interactive Fiction by Crystal Yee
-Release 1 / Serial number 130308 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 130312 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
+Rocky Field
+A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="386">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a296560" />
+      <child nodeId="node-0x1268f830" />
+      <child nodeId="node-0xf6a7d00" />
+      <child nodeId="node-0x1a2845d0" />
+      <child nodeId="node-0x17566ea0" />
+      <child nodeId="node-0x214fd0" />
+      <child nodeId="node-0x174d0290" />
+      <child nodeId="node-0x174d02e0" />
+      <child nodeId="node-0x1742ef70" />
+      <child nodeId="node-0x17523260" />
+      <child nodeId="node-0x1745d7b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1745d7b0">
+    <command xml:space="preserve">x cellphone</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="332">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a2910e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a2910e0">
+    <command xml:space="preserve">x cell phone</command>
+    <result xml:space="preserve"> A picture of a house. It&apos;s a modern one story model with solar panels and everything.   
+
+You find yourself with a picture phone, presumably yours. Maybe you should look through the pictures and contacts for clues about your identity.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="331">YES</temporary>
+  </item>
+  <item nodeId="node-0x17523260">
+    <command xml:space="preserve">next</command>
+    <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="317">YES</temporary>
+    <children>
+      <child nodeId="node-0x175305b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x175305b0">
+    <command xml:space="preserve">next picture</command>
+    <result xml:space="preserve">I only understood you as far as wanting to next.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="316">YES</temporary>
+  </item>
+  <item nodeId="node-0x1742ef70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grassy Meadow
+Patches of grass and wildflowers fill the meadow. It&apos;s surrounded by a rather tall fence. You can see a gate to the west.
+
+You can see Gate here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="236">YES</temporary>
+    <children>
+      <child nodeId="node-0x1742efe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1742efe0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
 Rocky Field
 A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.
 
@@ -20,23 +104,12 @@ You can see Keycard here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="296">NO</temporary>
+    <temporary score="236">YES</temporary>
     <children>
-      <child nodeId="node-0x1746dd70" />
-      <child nodeId="node-0xf737890" />
-      <child nodeId="node-0xf7c5980" />
+      <child nodeId="node-0x1742f050" />
     </children>
   </item>
-  <item nodeId="node-0xf7c5980">
-    <command xml:space="preserve">x me</command>
-    <result xml:space="preserve">You can&apos;t remember anything about yourself whether it&apos;s your name or how you look. Your head hurts a bit suggesting that your amnesia comes from blunt force trauma.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-  </item>
-  <item nodeId="node-0xf737890">
+  <item nodeId="node-0x1742f050">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -45,15 +118,139 @@ A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on t
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="296">YES</temporary>
+    <temporary score="236">YES</temporary>
     <children>
-      <child nodeId="node-0xf75cec0" />
-      <child nodeId="node-0x12500bf0" />
-      <child nodeId="node-0xf746950" />
-      <child nodeId="node-0xf7378e0" />
+      <child nodeId="node-0x1742f0c0" />
     </children>
   </item>
-  <item nodeId="node-0xf7378e0">
+  <item nodeId="node-0x1742f0c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+    <children>
+      <child nodeId="node-0x1742f130" />
+    </children>
+  </item>
+  <item nodeId="node-0x1742f130">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Bridge
+A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+    <children>
+      <child nodeId="node-0x1742f1a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1742f1a0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Waterfall
+A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
+
+You can see Telescope here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+    <children>
+      <child nodeId="node-0x1742f210" />
+    </children>
+  </item>
+  <item nodeId="node-0x1742f210">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Bridge
+A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+    <children>
+      <child nodeId="node-0x1742f280" />
+    </children>
+  </item>
+  <item nodeId="node-0x1742f280">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Tree Lined Trail
+A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on the left hand side of the trail. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+    <children>
+      <child nodeId="node-0x1742f2f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1742f2f0">
+    <command xml:space="preserve">take saw</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+    <children>
+      <child nodeId="node-0x1742f360" />
+    </children>
+  </item>
+  <item nodeId="node-0x1742f360">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Bridge
+A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+    <children>
+      <child nodeId="node-0x1742f3d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1742f3d0">
+    <command xml:space="preserve">cut bridge with saw</command>
+    <result xml:space="preserve">You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there&apos;s a vast gap in the bridge&apos;s place.
+
+Waterfall
+A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
+
+You can see Telescope here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+  </item>
+  <item nodeId="node-0x174d02e0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Tree Lined Trail
+A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on the left hand side of the trail. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="386">YES</temporary>
+    <children>
+      <child nodeId="node-0x174bcc10" />
+      <child nodeId="node-0x1742f910" />
+      <child nodeId="node-0x17431640" />
+      <child nodeId="node-0x1745d080" />
+    </children>
+  </item>
+  <item nodeId="node-0x1745d080">
     <command xml:space="preserve">ne</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -66,10 +263,10 @@ You can see Kyle here.
     <changed>NO</changed>
     <temporary score="248">YES</temporary>
     <children>
-      <child nodeId="node-0xf737950" />
+      <child nodeId="node-0x1745d0d0" />
     </children>
   </item>
-  <item nodeId="node-0xf737950">
+  <item nodeId="node-0x1745d0d0">
     <command xml:space="preserve">talk to kyle</command>
     <result xml:space="preserve">&quot;Shoots it&apos;s her&quot; Kyle mutters before running towards the Tree Lined Trail.
 
@@ -78,11 +275,11 @@ You can see Kyle here.
     <changed>NO</changed>
     <temporary score="247">YES</temporary>
     <children>
-      <child nodeId="node-0x12633aa0" />
-      <child nodeId="node-0xf737a80" />
+      <child nodeId="node-0xf798690" />
+      <child nodeId="node-0xf798640" />
     </children>
   </item>
-  <item nodeId="node-0xf737a80">
+  <item nodeId="node-0xf798640">
     <command xml:space="preserve">sw</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -95,7 +292,7 @@ You can see Kyle here.
     <changed>YES</changed>
     <temporary score="244">YES</temporary>
   </item>
-  <item nodeId="node-0x12633aa0">
+  <item nodeId="node-0xf798690">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -104,7 +301,7 @@ You can see Kyle here.
     <changed>YES</changed>
     <temporary score="240">YES</temporary>
   </item>
-  <item nodeId="node-0xf746950">
+  <item nodeId="node-0x17431640">
     <command xml:space="preserve">take saw</command>
     <result xml:space="preserve">Taken.
 
@@ -113,54 +310,10 @@ You can see Kyle here.
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0xf7744f0" />
-      <child nodeId="node-0xf746b10" />
-      <child nodeId="node-0xf7469c0" />
+      <child nodeId="node-0x17431780" />
     </children>
   </item>
-  <item nodeId="node-0xf7469c0">
-    <command xml:space="preserve">east</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="159">YES</temporary>
-    <children>
-      <child nodeId="node-0xf746a30" />
-    </children>
-  </item>
-  <item nodeId="node-0xf746a30">
-    <command xml:space="preserve">cut bridge with saw</command>
-    <result xml:space="preserve">You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there&apos;s a vast gap in the bridge&apos;s place.
-
-Waterfall
-A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
-
-You can see Telescope here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="159">YES</temporary>
-    <children>
-      <child nodeId="node-0xf746aa0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf746aa0">
-    <command xml:space="preserve">examine telescope</command>
-    <result xml:space="preserve">You see nothing special about Telescope.
-
- You can see a bridge in the distance.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="158">YES</temporary>
-  </item>
-  <item nodeId="node-0xf746b10">
+  <item nodeId="node-0x17431780">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Bridge
@@ -171,10 +324,10 @@ A rope bridge built atop a flowing river. It occasionally sways from side to sid
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0x12500ae0" />
+      <child nodeId="node-0x174308c0" />
     </children>
   </item>
-  <item nodeId="node-0x12500ae0">
+  <item nodeId="node-0x174308c0">
     <command xml:space="preserve">cut bridge with saw</command>
     <result xml:space="preserve">You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there&apos;s a vast gap in the bridge&apos;s place.
 
@@ -188,11 +341,10 @@ You can see Telescope here.
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0x12500d00" />
-      <child nodeId="node-0xf7379c0" />
+      <child nodeId="node-0x17430910" />
     </children>
   </item>
-  <item nodeId="node-0xf7379c0">
+  <item nodeId="node-0x17430910">
     <command xml:space="preserve">nw</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -205,11 +357,11 @@ You can see Stranger here.
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0xf737a10" />
-      <child nodeId="node-0xf655160" />
+      <child nodeId="node-0x17430e10" />
+      <child nodeId="node-0x17430960" />
     </children>
   </item>
-  <item nodeId="node-0xf655160">
+  <item nodeId="node-0x17430960">
     <command xml:space="preserve">talk to stranger</command>
     <result xml:space="preserve">&quot;Shoots it&apos;s her&quot; Stranger mutters before running towards the Tree Lined Trail.
 
@@ -218,11 +370,11 @@ You can see Stranger here.
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0x17588340" />
-      <child nodeId="node-0x17568610" />
+      <child nodeId="node-0x17430da0" />
+      <child nodeId="node-0x174309b0" />
     </children>
   </item>
-  <item nodeId="node-0x17568610">
+  <item nodeId="node-0x174309b0">
     <command xml:space="preserve">sw</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -235,10 +387,10 @@ You can see Stranger here.
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0x17461f50" />
+      <child nodeId="node-0x17430a00" />
     </children>
   </item>
-  <item nodeId="node-0x17461f50">
+  <item nodeId="node-0x17430a00">
     <command xml:space="preserve">talk to stranger</command>
     <result xml:space="preserve">Stranger gawks at the broken bridge and runs towards the Rocky Field instead
 &gt;</result>
@@ -246,10 +398,10 @@ You can see Stranger here.
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0x175594e0" />
+      <child nodeId="node-0x17430a50" />
     </children>
   </item>
-  <item nodeId="node-0x175594e0">
+  <item nodeId="node-0x17430a50">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Rocky Field
@@ -262,10 +414,10 @@ You can see Stranger and Keycard here.
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0xf63d9c0" />
+      <child nodeId="node-0x17430aa0" />
     </children>
   </item>
-  <item nodeId="node-0xf63d9c0">
+  <item nodeId="node-0x17430aa0">
     <command xml:space="preserve">talk to stranger</command>
     <result xml:space="preserve">&quot;You&apos;re a persistant one&quot; Stranger mutters as he sprints towards the grassy meadow
 &gt;</result>
@@ -273,10 +425,10 @@ You can see Stranger and Keycard here.
     <changed>NO</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0xf7929c0" />
+      <child nodeId="node-0x17430af0" />
     </children>
   </item>
-  <item nodeId="node-0xf7929c0">
+  <item nodeId="node-0x17430af0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Grassy Meadow
@@ -289,10 +441,10 @@ You can see Gate and Stranger here.
     <changed>YES</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0x174c51c0" />
+      <child nodeId="node-0x174317d0" />
     </children>
   </item>
-  <item nodeId="node-0x174c51c0">
+  <item nodeId="node-0x174317d0">
     <command xml:space="preserve">talk to stranger</command>
     <result xml:space="preserve">&quot;You&apos;re a persistant one&quot; Stranger mutters as he sprints towards the southern path
 &gt;</result>
@@ -300,10 +452,10 @@ You can see Gate and Stranger here.
     <changed>YES</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0xf6262d0" />
+      <child nodeId="node-0x17431820" />
     </children>
   </item>
-  <item nodeId="node-0xf6262d0">
+  <item nodeId="node-0x17431820">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Cliff
@@ -316,17 +468,17 @@ You can see Stranger here.
     <changed>YES</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0x175412b0" />
+      <child nodeId="node-0x17430cc0" />
     </children>
   </item>
-  <item nodeId="node-0x175412b0">
+  <item nodeId="node-0x17430cc0">
     <command xml:space="preserve">talk to stranger</command>
     <result xml:space="preserve">After taking a look around, the Stranger sees that there is no where to run and resigns himself to his fate.
  &quot;What are the chances that we&apos;d end up here&quot; he mutters to himself as you walk towards him.
 &quot;Who are you?&quot; you ask.
 &quot;What?!?&quot;
 &quot;I swear, I never even met you but you keep on running away&quot;&quot;…&quot;&quot;I think I lost my memory but for some reason I have pictures of you in my phone. Do you have any idea about who I am?&quot;
-&quot;I see… You are not someone I know personally I am not against cooperating with you to get out of this place.
+&quot;I see… You are not someone I know personally I am not against cooperating with you to get out of this place.wh
 You agree to cooperate with the stranger.
 By the way, my name is Landon.
 
@@ -335,10 +487,10 @@ By the way, my name is Landon.
     <changed>YES</changed>
     <temporary score="296">YES</temporary>
     <children>
-      <child nodeId="node-0x1753d430" />
+      <child nodeId="node-0x17430d30" />
     </children>
   </item>
-  <item nodeId="node-0x1753d430">
+  <item nodeId="node-0x17430d30">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Cliff
 A sheer cliff overlooking the Grassy Meadow.
@@ -350,7 +502,7 @@ You can see Landon here.
     <changed>YES</changed>
     <temporary score="295">YES</temporary>
   </item>
-  <item nodeId="node-0x17588340">
+  <item nodeId="node-0x17430da0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -359,17 +511,17 @@ You can see Landon here.
     <changed>YES</changed>
     <temporary score="269">YES</temporary>
   </item>
-  <item nodeId="node-0xf737a10">
+  <item nodeId="node-0x17430e10">
     <command xml:space="preserve">talk to kyle</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="255">YES</temporary>
     <children>
-      <child nodeId="node-0x12500c90" />
+      <child nodeId="node-0x17430e80" />
     </children>
   </item>
-  <item nodeId="node-0x12500c90">
+  <item nodeId="node-0x17430e80">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -378,166 +530,7 @@ You can see Landon here.
     <changed>YES</changed>
     <temporary score="254">YES</temporary>
   </item>
-  <item nodeId="node-0x12500d00">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Without the bridge it&apos;s impossible to cross.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="206">YES</temporary>
-    <children>
-      <child nodeId="node-0xf774430" />
-    </children>
-  </item>
-  <item nodeId="node-0xf774430">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="206">YES</temporary>
-    <children>
-      <child nodeId="node-0xf774480" />
-    </children>
-  </item>
-  <item nodeId="node-0xf774480">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Without the bridge it&apos;s impossible to cross.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="205">YES</temporary>
-  </item>
-  <item nodeId="node-0xf7744f0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="170">YES</temporary>
-    <children>
-      <child nodeId="node-0xf774560" />
-    </children>
-  </item>
-  <item nodeId="node-0xf774560">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="170">YES</temporary>
-    <children>
-      <child nodeId="node-0xf7745d0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf7745d0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Tree Lined Trail
-A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on the left hand side of the trail. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="170">YES</temporary>
-    <children>
-      <child nodeId="node-0xf774640" />
-    </children>
-  </item>
-  <item nodeId="node-0xf774640">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="170">YES</temporary>
-    <children>
-      <child nodeId="node-0xf7746b0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf7746b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Waterfall
-A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
-
-You can see Telescope here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="170">YES</temporary>
-    <children>
-      <child nodeId="node-0xf774720" />
-    </children>
-  </item>
-  <item nodeId="node-0xf774720">
-    <command xml:space="preserve">x telescope</command>
-    <result xml:space="preserve">You see nothing special about Telescope.
-
- You can see a bridge in the distance. There&apos;s a large gap where the bridge used to be.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="170">YES</temporary>
-    <children>
-      <child nodeId="node-0xf75cd70" />
-    </children>
-  </item>
-  <item nodeId="node-0xf75cd70">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="170">YES</temporary>
-    <children>
-      <child nodeId="node-0x12500b30" />
-    </children>
-  </item>
-  <item nodeId="node-0x12500b30">
-    <command xml:space="preserve">cut bridge with saw</command>
-    <result xml:space="preserve">You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there&apos;s a vast gap in the bridge&apos;s place.
-
-Waterfall
-A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
-
-You can see Telescope here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="170">YES</temporary>
-    <children>
-      <child nodeId="node-0x12500b80" />
-    </children>
-  </item>
-  <item nodeId="node-0x12500b80">
-    <command xml:space="preserve">x telescope</command>
-    <result xml:space="preserve">You see nothing special about Telescope.
-
- You can see a bridge in the distance. There&apos;s a large gap where the bridge used to be.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="169">YES</temporary>
-  </item>
-  <item nodeId="node-0x12500bf0">
+  <item nodeId="node-0x1742f910">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Bridge
@@ -548,10 +541,10 @@ A rope bridge built atop a flowing river. It occasionally sways from side to sid
     <changed>NO</changed>
     <temporary score="263">YES</temporary>
     <children>
-      <child nodeId="node-0xf7c5370" />
+      <child nodeId="node-0x1742f980" />
     </children>
   </item>
-  <item nodeId="node-0xf7c5370">
+  <item nodeId="node-0x1742f980">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Waterfall
@@ -564,22 +557,10 @@ You can see Telescope here.
     <changed>NO</changed>
     <temporary score="263">YES</temporary>
     <children>
-      <child nodeId="node-0xf75cca0" />
-      <child nodeId="node-0xf7c5660" />
-      <child nodeId="node-0xf7c5430" />
-      <child nodeId="node-0xf7c53c0" />
+      <child nodeId="node-0x1742fa60" />
     </children>
   </item>
-  <item nodeId="node-0xf7c53c0">
-    <command xml:space="preserve">x telescope</command>
-    <result xml:space="preserve">You see nothing special about Telescope.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="189">YES</temporary>
-  </item>
-  <item nodeId="node-0xf7c5430">
+  <item nodeId="node-0x1742fa60">
     <command xml:space="preserve">nw</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -592,10 +573,10 @@ You can see Kyle here.
     <changed>YES</changed>
     <temporary score="263">YES</temporary>
     <children>
-      <child nodeId="node-0xf7c54a0" />
+      <child nodeId="node-0x1742fad0" />
     </children>
   </item>
-  <item nodeId="node-0xf7c54a0">
+  <item nodeId="node-0x1742fad0">
     <command xml:space="preserve">talk to kyle</command>
     <result xml:space="preserve">&quot;Shoots it&apos;s her&quot; Kyle mutters before running towards the Tree Lined Trail.
 
@@ -604,10 +585,10 @@ You can see Kyle here.
     <changed>YES</changed>
     <temporary score="263">YES</temporary>
     <children>
-      <child nodeId="node-0xf7c5510" />
+      <child nodeId="node-0x1742fb40" />
     </children>
   </item>
-  <item nodeId="node-0xf7c5510">
+  <item nodeId="node-0x1742fb40">
     <command xml:space="preserve">sw</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -620,10 +601,10 @@ You can see Kyle here.
     <changed>YES</changed>
     <temporary score="263">YES</temporary>
     <children>
-      <child nodeId="node-0xf7c5580" />
+      <child nodeId="node-0x1742fbb0" />
     </children>
   </item>
-  <item nodeId="node-0xf7c5580">
+  <item nodeId="node-0x1742fbb0">
     <command xml:space="preserve">talk to kyle</command>
     <result xml:space="preserve">&quot;Shoots it&apos;s her&quot; Kyle mutters before running towards the Bridge.
 
@@ -632,10 +613,10 @@ You can see Kyle here.
     <changed>YES</changed>
     <temporary score="263">YES</temporary>
     <children>
-      <child nodeId="node-0xf7c55f0" />
+      <child nodeId="node-0x1742fc20" />
     </children>
   </item>
-  <item nodeId="node-0xf7c55f0">
+  <item nodeId="node-0x1742fc20">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Bridge
@@ -648,480 +629,256 @@ You can see Kyle here.
     <changed>YES</changed>
     <temporary score="262">YES</temporary>
   </item>
-  <item nodeId="node-0xf7c5660">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
+  <item nodeId="node-0x174bcc10">
+    <command xml:space="preserve">select bush</command>
+    <result xml:space="preserve">A bush that would fit right in to a suburban garden but looks out of place here. You can see a large metalic thing under the bush.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="385">YES</temporary>
+  </item>
+  <item nodeId="node-0x174d0290">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">You can&apos;t remember anything about yourself whether it&apos;s your name or how you look. Your head hurts a bit suggesting that your amnesia comes from blunt force trauma.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="236">YES</temporary>
+  </item>
+  <item nodeId="node-0x214fd0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Cell Phone
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="217">YES</temporary>
+    <temporary score="305">YES</temporary>
     <children>
-      <child nodeId="node-0xf7c57b0" />
-      <child nodeId="node-0xf7c56d0" />
+      <child nodeId="node-0x175a1d00" />
+      <child nodeId="node-0xd527d20" />
     </children>
   </item>
-  <item nodeId="node-0xf7c56d0">
-    <command xml:space="preserve">w</command>
+  <item nodeId="node-0xd527d20">
+    <command xml:space="preserve">x cell phone</command>
+    <result xml:space="preserve">You see nothing special about Cell Phone.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="300">YES</temporary>
+    <children>
+      <child nodeId="node-0x893dfa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x893dfa0">
+    <command xml:space="preserve">open picture menu</command>
+    <result xml:space="preserve">That&apos;s not something you can open.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="299">YES</temporary>
+  </item>
+  <item nodeId="node-0x175a1d00">
+    <command xml:space="preserve">open picture menu</command>
+    <result xml:space="preserve">You open Picture Menu, revealing Picture 1, Picture 2 and Picture 3.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="305">YES</temporary>
+    <children>
+      <child nodeId="node-0xf60c160" />
+    </children>
+  </item>
+  <item nodeId="node-0xf60c160">
+    <command xml:space="preserve">look at picture 1</command>
+    <result xml:space="preserve">A picture of a house. It&apos;s a modern one story model with solar panels and everything.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="304">YES</temporary>
+  </item>
+  <item nodeId="node-0x17566ea0">
+    <command xml:space="preserve">select cell phone</command>
+    <result xml:space="preserve">You see nothing special about Cell Phone.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="307">YES</temporary>
+  </item>
+  <item nodeId="node-0x1a2845d0">
+    <command xml:space="preserve">next cell phone</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="217">YES</temporary>
+    <temporary score="348">YES</temporary>
     <children>
-      <child nodeId="node-0xf7c5740" />
+      <child nodeId="node-0x1d9b3bc0" />
     </children>
   </item>
-  <item nodeId="node-0xf7c5740">
+  <item nodeId="node-0x1d9b3bc0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="216">YES</temporary>
+    <temporary score="348">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a273f40" />
+    </children>
   </item>
-  <item nodeId="node-0xf7c57b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
+  <item nodeId="node-0x1a273f40">
+    <command xml:space="preserve">x cell phone</command>
+    <result xml:space="preserve">You find yourself with a picture phone, presumably yours. Maybe you should look through the pictures and contacts for clues about your identity.
+
+ A picture of a house. It&apos;s a modern one story model with solar panels and everything.   A picture of a woman with brown hair in a ponytail. She&apos;s wearing a navy blue coat and is carrying a rather large backpack. She&apos;s standing in front of a gate.  
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="199">YES</temporary>
+    <temporary score="348">YES</temporary>
     <children>
-      <child nodeId="node-0xf75cae0" />
+      <child nodeId="node-0x1752cca0" />
     </children>
   </item>
-  <item nodeId="node-0xf75cae0">
-    <command xml:space="preserve">w</command>
+  <item nodeId="node-0x1752cca0">
+    <command xml:space="preserve">next picture</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="199">YES</temporary>
+    <temporary score="348">YES</temporary>
     <children>
-      <child nodeId="node-0xf75cb50" />
+      <child nodeId="node-0x1d181990" />
     </children>
   </item>
-  <item nodeId="node-0xf75cb50">
+  <item nodeId="node-0x1d181990">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="199">YES</temporary>
+    <temporary score="348">YES</temporary>
     <children>
-      <child nodeId="node-0xf75cbc0" />
+      <child nodeId="node-0x1a205f50" />
     </children>
   </item>
-  <item nodeId="node-0xf75cbc0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">&gt;</result>
+  <item nodeId="node-0x1a205f50">
+    <command xml:space="preserve">x cell phone</command>
+    <result xml:space="preserve"> A picture of a house. It&apos;s a modern one story model with solar panels and everything.   A picture of a woman with brown hair in a ponytail. She&apos;s wearing a navy blue coat and is carrying a rather large backpack. She&apos;s standing in front of a gate.  
+
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="199">YES</temporary>
+    <temporary score="347">YES</temporary>
+  </item>
+  <item nodeId="node-0xf6a7d00">
+    <command xml:space="preserve">x cell phone</command>
+    <result xml:space="preserve">You find yourself with a picture phone, presumably yours. Maybe you should look through the pictures and contacts for clues about your identity.
+
+ A picture of a house. It&apos;s a modern one story model with solar panels and everything.   
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="352">YES</temporary>
     <children>
-      <child nodeId="node-0xf75cc30" />
+      <child nodeId="node-0x1aade810" />
     </children>
   </item>
-  <item nodeId="node-0xf75cc30">
+  <item nodeId="node-0x1aade810">
+    <command xml:space="preserve">next picture</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="352">YES</temporary>
+    <children>
+      <child nodeId="node-0x1aaf8340" />
+      <child nodeId="node-0x1a29d490" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a29d490">
+    <command xml:space="preserve">picture</command>
+    <result xml:space="preserve">Which do you mean, Picture or Picture Menu?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="328">YES</temporary>
+  </item>
+  <item nodeId="node-0x1aaf8340">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="198">YES</temporary>
-  </item>
-  <item nodeId="node-0xf75cca0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
     <changed>NO</changed>
-    <temporary score="224">YES</temporary>
+    <temporary score="352">YES</temporary>
     <children>
-      <child nodeId="node-0xf75cd10" />
+      <child nodeId="node-0x1a2a7b00" />
     </children>
   </item>
-  <item nodeId="node-0xf75cd10">
+  <item nodeId="node-0x1a2a7b00">
+    <command xml:space="preserve">x cell phone</command>
+    <result xml:space="preserve">  A picture of a woman with brown hair in a ponytail. She&apos;s wearing a navy blue coat and is carrying a rather large backpack. She&apos;s standing in front of a gate.  
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="351">YES</temporary>
+  </item>
+  <item nodeId="node-0x1268f830">
+    <command xml:space="preserve">select picture menu</command>
+    <result xml:space="preserve">In Picture Menu are Picture 1, Picture 2 and Picture 3.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="310">YES</temporary>
+    <children>
+      <child nodeId="node-0x50a9190" />
+    </children>
+  </item>
+  <item nodeId="node-0x50a9190">
+    <command xml:space="preserve">examine picture menu</command>
+    <result xml:space="preserve">You see nothing special about Picture Menu.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="309">YES</temporary>
+  </item>
+  <item nodeId="node-0x1a296560">
+    <command xml:space="preserve">next picture</command>
+    <result xml:space="preserve">(Picture Menu)
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="325">YES</temporary>
+    <children>
+      <child nodeId="node-0x175f41b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x175f41b0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="224">YES</temporary>
+    <temporary score="325">YES</temporary>
     <children>
-      <child nodeId="node-0xf75cde0" />
+      <child nodeId="node-0x17443bc0" />
     </children>
   </item>
-  <item nodeId="node-0xf75cde0">
-    <command xml:space="preserve">actions on</command>
-    <result xml:space="preserve">Actions listing on.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="224">YES</temporary>
-    <children>
-      <child nodeId="node-0xf75ce50" />
-    </children>
-  </item>
-  <item nodeId="node-0xf75ce50">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">[going west]
-[going west - failed]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="223">YES</temporary>
-  </item>
-  <item nodeId="node-0xf75cec0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0xf75cf30" />
-    </children>
-  </item>
-  <item nodeId="node-0xf75cf30">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0xf75cfa0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf75cfa0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Rocky Field
-A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.
-
-You can see Keycard here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746d9f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746d9f0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Grassy Meadow
-Patches of grass and wildflowers fill the meadow. It&apos;s surrounded by a rather tall fence. You can see a gate to the west.
-
-You can see Gate here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746da60" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746da60">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Rocky Field
-A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.
-
-You can see Keycard here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746dad0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746dad0">
-    <command xml:space="preserve">take all</command>
-    <result xml:space="preserve">(Keycard)
-Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746db40" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746db40">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Grassy Meadow
-Patches of grass and wildflowers fill the meadow. It&apos;s surrounded by a rather tall fence. You can see a gate to the west.
-
-You can see Gate here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746dbb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746dbb0">
-    <command xml:space="preserve">open gate</command>
-    <result xml:space="preserve">It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746dc20" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746dc20">
-    <command xml:space="preserve">unlock gate</command>
-    <result xml:space="preserve">(with Keycard)
-You need to &quot;input a four digit code into the Digital Lock&quot;. There&apos;s a hint below saying &quot;the last four digits&quot;. If I thought the password maker was a minimalist, I might &quot;input 1111 into the Digital Lock&quot;. 
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746dc90" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746dc90">
-    <command xml:space="preserve">input 2302 into the digital lock</command>
-    <result xml:space="preserve">You hear a wonderful chiming sound as the screen fades to black and the Digital Lock opens .
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746dd00" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746dd00">
-    <command xml:space="preserve">open gate</command>
-    <result xml:space="preserve">You open Gate.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="138">YES</temporary>
-  </item>
-  <item nodeId="node-0x1746dd70">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Grassy Meadow
-Patches of grass and wildflowers fill the meadow. It&apos;s surrounded by a rather tall fence. You can see a gate to the west.
-
-You can see Gate here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e550" />
-      <child nodeId="node-0x1746dde0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746dde0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Rocky Field
-A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.
-
-You can see Keycard here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e0f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e0f0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Tree Lined Trail
-A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on the left hand side of the trail. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e160" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e160">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e1d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e1d0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e240" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e240">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Waterfall
-A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
-
-You can see Telescope here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e2b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e2b0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e320" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e320">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Tree Lined Trail
-A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on the left hand side of the trail. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e390" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e390">
-    <command xml:space="preserve">take saw</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e400" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e400">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e470" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e470">
-    <command xml:space="preserve">cut bridge with saw</command>
-    <result xml:space="preserve">You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there&apos;s a vast gap in the bridge&apos;s place.
-
-Waterfall
-A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
-
-You can see Telescope here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="236">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e4e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e4e0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Without the bridge it&apos;s impossible to cross.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="235">YES</temporary>
-  </item>
-  <item nodeId="node-0x1746e550">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">(first opening Gate)
-It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e5c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e5c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Rocky Field
-A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Tree Lined Trail to the north and a Grassy Meadow to the west.
-
-You can see Keycard here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e630" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e630">
+  <item nodeId="node-0x17443bc0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Tree Lined Trail
@@ -1130,157 +887,28 @@ A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on t
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="154">YES</temporary>
+    <temporary score="325">YES</temporary>
     <children>
-      <child nodeId="node-0x1746e6a0" />
+      <child nodeId="node-0x174b4310" />
     </children>
   </item>
-  <item nodeId="node-0x1746e6a0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
+  <item nodeId="node-0x174b4310">
+    <command xml:space="preserve">next saw</command>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="154">YES</temporary>
+    <temporary score="325">YES</temporary>
     <children>
-      <child nodeId="node-0x1746e710" />
+      <child nodeId="node-0x1aad04a0" />
     </children>
   </item>
-  <item nodeId="node-0x1746e710">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Waterfall
-A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
-
-You can see Telescope here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e780" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e780">
-    <command xml:space="preserve">examine telescope</command>
-    <result xml:space="preserve">You see nothing special about Telescope.
-
- You can see a bridge in the distance. , There&apos;s a large gap where the bridge used to be. 
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e7f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e7f0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e860" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e860">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e8d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e8d0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Tree Lined Trail
-A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on the left hand side of the trail. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e940" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e940">
-    <command xml:space="preserve">take saw</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746e9b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746e9b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Bridge
-A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Tree Lined Trail to the west, and a Waterfall to the east.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746ea20" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746ea20">
-    <command xml:space="preserve">cut bridge with saw</command>
-    <result xml:space="preserve">You walk right off of the easternmost side of the bridge. You cut the rope supports of the bridge and the wodden rope structure falls to the other side of the ravine. Now there&apos;s a vast gap in the bridge&apos;s place.
-
-Waterfall
-A huge waterfall roars above. You can see the Bridge to the west and the Forest Clearing to the northwest.
-
-You can see Telescope here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746ea90" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746ea90">
-    <command xml:space="preserve">examine telescope</command>
-    <result xml:space="preserve">You see nothing special about Telescope.
-
- You can see a bridge in the distance. 
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746eb00" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746eb00">
+  <item nodeId="node-0x1aad04a0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="153">YES</temporary>
+    <temporary score="324">YES</temporary>
   </item>
 </Skein>

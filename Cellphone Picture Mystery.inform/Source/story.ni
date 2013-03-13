@@ -2,7 +2,73 @@
 
 The description of the player is "You can't remember anything about yourself whether it's your name or how you look. Your head hurts a bit suggesting that your amnesia comes from blunt force trauma.". 
 
+Understand "look at [something]" as examining. 
+Understand "select [something]" as examining. 
+Nexting is an action applying to one thing. 
+Understand "next [something]" as nexting. 
+Previousing is an action applying to one thing. 
+Understand "previous [something]" as previousing.
 
+[cellphone lots of help from Kapri]
+Cell phone is a thing.
+The player is holding cell phone. 
+Description of cell phone is "An ordinary picture phone that just might be mine. Maybe if I rummage through the pictures or contact information, I'll be able to find out who I am. I should 'select Photo Menu' or 'select Contact Menu'.". 
+
+Photo Menu is a container. 
+The description is "From here you can view the phone's photo collection. You can use the commands 'next picture' and 'previous picture' to browse through the photos.". 
+Photo Menu is a part of Cell Phone.
+Understand "picture" as cell phone. 
+Understand "photo" as cell phone. 
+
+A thing can be viewed or unviewed. 
+Photo 1 is a thing in Photo Menu. 
+Photo 1 is unviewed. 
+Description of Photo 1 is "A picture of a house. It's a modern one story model with solar panels and everything.". 
+After examining Photo 1, now Photo 1 is viewed. 
+
+Photo 2 is a thing in Photo Menu. 
+Photo 2 is unviewed. 
+After examining Photo 2, now Photo 2 is viewed. 
+Description of Photo 2 is "A picture of a woman with brown hair in a ponytail. She's wearing a navy blue coat and is carrying a rather large backpack. She's standing in front of a gate.". 
+
+Photo 3 is a thing in Photo menu. 
+Photo 3 is unviewed. 
+After examining Photo 3, now Photo 3 is viewed. 
+Description of Photo 3 is "It's a picture of a young man doing something next to a rather plain looking bush. There are many pine trees in the background. ".
+Before examining Photo 3:
+move ball 1 to storage; 
+move ball 2 to storage; 
+move ball 3 to viewer. 
+
+Before examining Photo 1:
+move ball 1 to viewer; 
+move ball 2 to storage; 
+move ball 3 to storage. 
+
+Before examining Photo 2:
+move ball 1 to storage; 
+move ball 2 to viewer; 
+move ball 3 to storage. 
+
+Viewer is a container. 
+Storage is a container. 
+Ball 1 is a thing in storage. 
+Ball 2 is a thing in storage. 
+Ball 3 is a thing in storage. 
+
+[Scrolling through photo menu with next picture]
+Instead of nexting:
+	If the noun is cell phone:
+		If Ball 1 is in the viewer:
+			say "It's a picture of a woman with brown hair in a ponytail. She's wearing a navy blue coat and is carrying a rather large backpack. She's standing in front of a gate.";
+			now Ball 2 is in viewer;
+			now Ball 1 is in storage;
+			now Photo 2 is viewed; 
+		else if Ball 2 is in the viewer:
+			say "It's a picture of a young man doing something next to a rather plain looking bush. There are many pine trees in the background. ";
+			now Ball 3 is in viewer;
+			now Ball 2 is in storage;
+			now Photo 3 is viewed. 			
 
 
 [items]
@@ -14,7 +80,7 @@ Description of Rocky Field is "A dirt covered field with rocks scattered about. 
 
 Tree Lined Trail is a room. 
 Tree Lined Trail is north of Rocky Field. 
-Description of Tree Lined Trail is "A fairly normal hiking trail full of pine trees. A bush lies ostentaniously on the left hand side of the trail. You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.".
+Description of Tree Lined Trail is "A fairly normal hiking trail full of pine trees.  You can see the a Rocky Field to the south, a Forest Clearing to the northeast and a Bridge to the east.".
 Bush is scenery supporter.
 Bush is in Tree Lined Trail. 
 Description of bush is "A bush that would fit right in to a suburban garden but looks out of place here. You can see a large metalic thing under the bush.".  
