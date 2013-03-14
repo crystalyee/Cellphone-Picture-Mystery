@@ -23,18 +23,20 @@ Understand "photo" as cell phone.
 A thing can be viewed or unviewed. 
 Photo 1 is a thing in Photo Menu. 
 Photo 1 is unviewed. 
-Description of Photo 1 is "A picture of a house. It's a modern one story model with solar panels and everything.". 
+Description of Photo 1 is "It's a picture of a house. It's a modern one story model with solar panels and everything. Behind it there's a gate surrounded by a grassy field.". 
 After examining Photo 1, now Photo 1 is viewed. 
 
 Photo 2 is a thing in Photo Menu. 
 Photo 2 is unviewed. 
 After examining Photo 2, now Photo 2 is viewed. 
-Description of Photo 2 is "A picture of a woman with brown hair in a ponytail. She's wearing a navy blue coat and is carrying a rather large backpack. She's standing in front of a gate.". 
+Description of Photo 2 is "A picture of a woman with brown hair in a ponytail. She's wearing a navy blue coat and is carrying a large green backpack. She's standing in front of a gate.". 
 
 Photo 3 is a thing in Photo menu. 
 Photo 3 is unviewed. 
 After examining Photo 3, now Photo 3 is viewed. 
 Description of Photo 3 is "It's a picture of a young man doing something next to a rather plain looking bush. There are many pine trees in the background. ".
+
+
 Before examining Photo 3:
 move ball 1 to storage; 
 move ball 2 to storage; 
@@ -68,9 +70,59 @@ Instead of nexting:
 			say "It's a picture of a young man doing something next to a rather plain looking bush. There are many pine trees in the background. ";
 			now Ball 3 is in viewer;
 			now Ball 2 is in storage;
-			now Photo 3 is viewed. 			
+			now Photo 3 is viewed;	
+		else if Ball 3 is in the viewer:
+			say "It's a picture of a house. It's a modern one story model with solar panels and everything. Behind it there's a gate surrounded by a grassy field.";
+			now Ball 1 is in viewer;
+			now Ball 3 is in storage;
+			now Photo 1 is viewed. 
+Instead of previousing:
+	If the noun is cell phone:
+		If Ball 1 is in the viewer:
+			say "It's a picture of a young man doing something next to a rather plain looking bush. There are many pine trees in the background. ";
+			now Ball 3 is in viewer;
+			now Ball 1 is in storage;
+			now Photo 3 is viewed; 
+		else if Ball 3 is in the viewer:
+			say "It's a picture of a young man doing something next to a rather plain looking bush. There are many pine trees in the background. ";
+			now Ball 2 is in viewer;
+			now Ball 3 is in storage;
+			now Photo 2 is viewed;	
+		else if Ball 2 is in the viewer:
+			say "It's a picture of a house. It's a modern one story model with solar panels and everything. Behind it there's a gate surrounded by a grassy field.";
+			now Ball 1 is in viewer;
+			now Ball 2 is in storage;
+			now Photo 1 is viewed. 
+[Contacts]
+Contacts Menu is a container. 
+The description is "From here you can view your phone's contacts.". 
+Contacts Menu is a part of Cell Phone. 
 
+My Number is a thing in Contacts Menu. 
+My Number is fixed in place. 
+The description is "4442302".
+Understand "4442302" as My Number. 
 
+Mom's Number is a thing in Contacts Menu. 
+Mom's Number is fixed in place. 
+The description is "3588970". 
+Understand "3588970" as Mom's Number. 
+
+Calling is an action applying to one thing. 
+Understand "call [something]" as Calling. 
+Instead of calling:
+	If the noun is My Number:
+		say "I can't call myself.";
+	Else if digital lock is switched on:
+		say "Someone in my contacts list called 'Mom' should know about me right? I try calling, but it appears that I'm out of range. Maybe if I could get to civilization…";
+	Else if the noun is Mom's Number:
+		say "After discovering you finally have a phone signal, you decide to call 'Mom'. After a few rings you hear a frantic voice.";
+		say "'Catherine, is that you? I've been worried sick.'";
+		say "'Um… you are my mom right? It might be hard to believe it but I lost my…'";
+		say "'So how is your case going. You promised to come over for dinner at six but…'";
+		say "'My case…?'";
+		say "'Yeah, Detective Jowd put you on the case to catch the prime suspect in the February Killings. What was his name again? Meyers something… Brandon maybe?'".
+		
 [items]
 Keycard is a thing. 
 
@@ -110,7 +162,7 @@ Rope is undescribed.
 A thing can be unbroken or broken. 
 Rope is unbroken. 
 Understand "Bridge" as rope. 
-
+Understand "cut [something]" as cutting it with. 
 [making the bridge inaccesible]
 Instead of going west when the player is in Waterfall:
 	if the rope is broken:
@@ -139,11 +191,19 @@ Grassy Meadow is a room.
 Grassy Meadow is west of Rocky Field. 
 Description of Grassy Meadow is "Patches of grass and wildflowers fill the meadow. It's surrounded by a rather tall fence. You can see a gate to the west and a pathway leading to the south.".
 
+[Cliff]
+
+Cliff is a room. 
+Cliff is south of Grassy Meadow. 
+Description of Cliff is "A sheer cliff overlooking the Rocky Field. The Grassy Meadow is to the north.". 
+
 [NPC]
+A person can be run or follow. 
 Talking to is an action applying to one thing. 
 Understand "talk to [someone]" as talking to. 
 Stranger is a man. 
 Landon is a man. 
+Landon is run. 
 Stranger is in Forest Clearing. 
 Instead of talking to Stranger when the player is in Forest Clearing:
 	if the rope is unbroken:
@@ -178,21 +238,82 @@ say " 'What are the chances that we'd end up here' he mutters to himself as you 
 say "'Who are you?' you ask.";
 say "'What?!?'";
 say "'I swear, I never even met you but you keep on running away'";
-say "'…'";
-say "'I think I lost my memory but for some reason I have pictures of you in my phone. Do you have any idea about who I am?'";
-say "'I see… You are not someone I know personally I am not against cooperating with you to get out of this place.";
+say "    '…'    ";
+say "    'I think I lost my memory but for some reason I have pictures of you in my phone. Do you have any idea about who I am?'    ";
+say "    'I see… You are not someone I know personally I am not against cooperating with you to get out of this place.'    ";
 say "You agree to cooperate with the stranger.";	
-say "By the way, my name is Landon the stanger says.";
+say "'By the way, my name is Landon, Landon Meyers'";
 now Stranger is off-stage;
-now Landon is in Cliff. 
+now Landon is in Cliff;
+now Landon is follow.  
 
 After talking to Landon for the first time: say "Landon shuffles with the backpack he's wearing and passes you a keycard. 'This activates something in the gate, but doesn't open it' he says.";
 now the player is holding keycard. 
-[Cliff]
 
-Cliff is a room. 
-Cliff is south of Grassy Meadow. 
-Description of Cliff is "A sheer cliff overlooking the Grassy Meadow.". 
+[Making Landon follow you]
+
+Instead of going north when the player is in Cliff:
+	if Landon is follow:
+		move Landon to Grassy Meadow;
+		move the player to Grassy Meadow; 
+	else:
+		continue the action. 
+Instead of going south when the player is in Grassy Meadow:
+	if Landon is follow:
+		move Landon to Cliff;
+		move the player to Cliff;
+	else: 
+		continue the action. 
+Instead of going east when the player is in Grassy Meadow:
+	if Landon is follow:
+		move Landon to Rocky Field;
+		move the player to Rocky Field;
+	else:
+		continue the action. 
+Instead of going west when the player is in Rocky Field:
+	if Landon is follow:
+		move Landon to Grassy Meadow;
+		move the player to Grassy Meadow;
+	else:
+		continue the action. 
+Instead of going north when the player is in Rocky Field:
+	if Landon is follow:
+		move Landon to Tree Lined Trail;
+		move the player to Tree Lined Trail;
+	else:
+		continue the action. 
+Instead of going south when the player is in Tree Lined Trail:
+	if Landon is follow:
+		move Landon to Rocky Field;
+		move the player to Rocky Field;
+	else:
+		continue the action. 
+Instead of going northeast when the player is in Tree Lined Trail:
+	if Landon is follow:
+		move Landon to Forest Clearing;
+		move the player to Forest Clearing;
+	else:
+		continue the action. 
+Instead of going southwest when the player is in Forest Clearing:
+	if Landon is follow:
+		move Landon to Tree Lined Trail;
+		move the player to Tree Lined Trail;
+	else:
+		continue the action. 
+Instead of going southeast when the player is in Forest Clearing:
+	if Landon is follow:
+		move Landon to Waterfall;
+		move the player to Waterfall;
+	else:
+		continue the action. 
+Instead of going northwest when the player is in Waterfall:
+	if Landon is follow:
+		move Landon to Forest Clearing;
+		move the player to Forest Clearing;
+	else:
+		continue the action. 
+
+
 
 [Gate]
 Gate is a door.
