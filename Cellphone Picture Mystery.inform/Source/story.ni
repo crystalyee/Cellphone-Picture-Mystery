@@ -1,14 +1,31 @@
 "Cellphone Picture Mystery" by Crystal Yee
 The maximum score is 6. 
-The description of the player is "You can't remember anything about yourself whether it's your name or how you look. Your head hurts a bit suggesting that your amnesia comes from blunt force trauma.". 
+A thing can be known or unknown. 
+The player is unknown. 
+The description of the player is "[if the player is known]According to Landon, you're the brown haired woman from photo 2.[end if] [if the player is unknown]You can't remember anything about yourself whether it's your name or how you look.[end if] Your head hurts a bit suggesting that your amnesia comes from blunt force trauma. ". 
+Friendship is a number that varies. 
+Friendship is usually 0. 
 
+
+[disabling take all]
+Understand the command "take" as something new. 
+Understand "take [something]" as taking. 
+
+[various synonyms]
 Understand "look at [something]" as examining. 
+Understand "look through [something]" as examining. 
 Understand "select [something]" as examining. 
 Nexting is an action applying to one thing. 
 Understand "next [something]" as nexting. 
 Previousing is an action applying to one thing. 
 Understand "previous [something]" as previousing.
 
+[start of play]
+When play begins:
+	say "You wake up in an unfamiliar place with nothing but a cell phone. You don't remember who you are or what you're doing here. Use the clues on your phone and in the surrounding area to escape this place and to find your true identity.".
+	
+	
+	
 [cellphone lots of help from Kapri]
 Cell Phone is a thing.
 Understand "Cellphone" , "cell" as cell phone. 
@@ -30,7 +47,7 @@ After examining Photo 1, now Photo 1 is viewed.
 Photo 2 is a thing in Photo Menu. 
 Photo 2 is unviewed. 
 After examining Photo 2, now Photo 2 is viewed. 
-Description of Photo 2 is "A picture of a woman with brown hair in a ponytail. She's wearing a navy blue coat and is carrying a large green backpack. She's standing in front of a gate.". 
+Description of Photo 2 is "A picture of a woman with brown hair in a ponytail. She's wearing a navy blue coat and is carrying a large backpack. She's standing in front of a gate.". 
 
 Photo 3 is a thing in Photo menu. 
 Photo 3 is unviewed. 
@@ -124,14 +141,21 @@ Instead of calling:
 		say "'So how is your case going. You promised to come over for dinner at six but…'";
 		say "'My case…?'";
 		say "'Yeah, Detective Jowd put you on the case to catch the prime suspect in the February Killings. What was his name again? Meyers something… Brandon maybe?'";
-		end the game saying "And so you continue your life looking for the elusive Brandon, alleged murderer in the February Killings and the one who stole your memories.". 
+		end the game saying "And so you continue your life looking for the elusive Brandon, alleged murderer in the February Killings and the one who stole your memories. (If you choose to play the game again, try interacting with Landon more)". 
 		
 [items]
 Keycard is a thing. 
 Understand "Card", "Key", "Key Card" as keycard. 
 
 Rocky Field is a room. 
-Description of Rocky Field is "A dirt covered field with rocks scattered about. A high cliff looms above casting a shadow over much of the field. You can see a Pine Tree Trail to the north and a Grassy Meadow to the west.".
+Description of Rocky Field is "A dirt covered field with rocks scattered about. A dark shadow casts itself over much of the field. You can see a Pine Tree Trail to the north and a Grassy Meadow to the west.".
+Dirt is scenery in Rocky Field. 
+Description of Dirt is "Ordinary red dirt.". 
+Rocks is scenery in Rocky Field. 
+Description of Rocks is "Rocks of miscellaneous sizes cover the field. I wonder if they fell off of the cliff.". 
+Shadow is scenery in Rocky Field. 
+Description of Shadow is "Most of the time shade is refreshing, but honestly I'm a bit creeped out.". 
+ 
 
 Offstage is a room. 
 
@@ -181,7 +205,7 @@ Instead of cutting:
 
 Bridge is a room. 
 Bridge is east of Pine Tree Trail. 
-Description of Bridge is "A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You can see a Pine Tree Trail to the west, and a Waterfall to the east.".
+Description of Bridge is "A rope bridge built atop a flowing river. It occasionally sways from side to side making you question its architectural integrity. You wouldn't be able to damage the bridge with your bare hands, but with the right tools, who knows what you could do. You can see a Pine Tree Trail to the west, and a Waterfall to the east.".
 Rope is a thing in Bridge. 
 Rope is undescribed. 
 A thing can be unbroken or broken. 
@@ -213,17 +237,28 @@ Forest Clearing is a room.
 Forest Clearing is northeast of Pine Tree Trail. 
 Forest Clearing is northwest of Waterfall. 
 Description of Forest Clearing is "Sunlight filters through the leaves of the trees above. You can see the Pine Tree Trail to the southwest and a Waterfall to the southeast.".
+Pine Trees is scenery in Forest Clearing.
+Description of Pine Trees is "Beautiful pine trees line the trail. I wonder if squirels live in them.". 
+Sunlight is scenery in Forest Clearing. 
+Description of Sunlight is "If you stare at the sun too long, you might go blind.". 
 
 Grassy Meadow is a room. 
 Grassy Meadow is west of Rocky Field. 
 Description of Grassy Meadow is "Patches of grass and wildflowers fill the meadow. It's surrounded by a rather tall fence. You can see a gate to the west, the Rocky Field to the east and a pathway leading to the south."
 Daisy is a thing in Grassy Meadow. 
-Description of Daisy is "A cute white daisy. He looked a little lonely so I just had to pick him up.". 
+Description of Daisy is "A cute white daisy. This flower looked a little lonely so I just had to pick him up.". 
+Grass is scenery in Grassy Meadow. 
+Description of Grass is "Green and quite soft. It looks comfortable to sleep on.". 
+Fence is scenery in Grassy Meadow. 
+Description of Fence is "A tall metal fence impossible to climb over.". 
+
 [Cliff]
 
 Cliff is a room. 
 Cliff is south of Grassy Meadow. 
 Description of Cliff is "A sheer cliff overlooking the Rocky Field. The Grassy Meadow is to the north.". 
+Over cliff is scenery in Cliff. 
+Description of Over cliff is "A far fall down. The Rocky Field looks so different from here.". 
 
 [NPC]
 A person can be run or follow. 
@@ -235,15 +270,15 @@ Landon is a man.
 Landon is run. 
 Description of Landon is "You don't know what to think about Landon, but he said that he would cooperate with you.". 
 
-Friendship is a number that varies. 
-Friendship is usually 0. 
+
 
 [communicating with landon]
 Understand "me", "myself", "the player", "self" as "[me]".
 Instead of asking Landon about "[me]" for the first time:
 	say "'You want me to tell you about yourself? I can't tell you much other than physical appearance though. Twentyish, brown haired with a ponytail. You look pretty average too me. Hey? Why are you looking at me like that?'";
 	increase friendship by 1;
-	say "You think you've bonded with Landon.". 
+	say "You think you've bonded with Landon.";
+	now the player is known. 
 	
 Understand "Landon", "himself", "him" as "[Landon]". 
 Instead of asking Landon about "[Landon]" for the first time:
@@ -298,7 +333,8 @@ Instead of asking Landon about "[February Killings]":
 
 Instead of showing photo 2 to Landon:
 	say "'It's a picture of you isn't it? What about it?'";
-	move photo 2 to photo menu. 
+	move photo 2 to photo menu;
+	now the player is known. 
 
 Instead of showing photo 3 to Landon:
 	say "'It's me… Are you some sort of stalker?'";
@@ -350,25 +386,25 @@ Instead of talking to Stranger when the player is in Forest Clearing:
 		say "'Shoots it's her' Stranger mutters before running towards the Pine Tree Trail.";
 		now Stranger is in Pine Tree Trail;
 	otherwise:
-		say "'Shoots it's her' Stranger mutters before running towards the Pine Tree Trail.";
+		say "'Shoots it's her' Stranger mutters before running southwest towards the Pine Tree Trail.";
 		now Stranger is in Pine Tree Trail. 
 Instead of talking to Stranger when the player is in Pine Tree Trail:
 	if the rope is unbroken:
-		say "'Shoots it's her' Stranger mutters before running towards the Bridge.";
+		say "'Shoots it's her' Stranger mutters before running east towards the Bridge.";
 		now Stranger is in Bridge;
 	otherwise:
-		say "Stranger gawks at the broken bridge and runs towards the Rocky Field instead.";
+		say "Stranger gawks at the broken bridge and runs south towards the Rocky Field instead.";
 		now Stranger is in Rocky Field. 
 Instead of talking to Stranger when the player is in Bridge:
 	if the rope is unbroken:
-		say "'Shoots it's her' Stranger mutters before running towards the Waterfall.";
+		say "'Shoots it's her' Stranger mutters before running east towards the Waterfall.";
 		now Stranger is in Waterfall; 
 Instead of talking to Stranger when the player is in Waterfall:
 	if the rope is unbroken:
-		say "'Shoots it's her' Stranger mutters before running towards the Forest Clearing.";
+		say "'Shoots it's her' Stranger mutters before running northwest towards the Forest Clearing.";
 		now Stranger is in Forest Clearing;
 Instead of talking to Stranger when the player is in Rocky Field:
-	say "'You're a persistant one' Stranger mutters as he sprints towards the grassy meadow.";
+	say "'You're a persistant one' Stranger mutters as he sprints west towards the Grassy Meadow.";
 	now Stranger is in Grassy Meadow.  
 Instead of talking to Stranger when the player is in Grassy Meadow:
 	say "'You're a persistant one' Stranger mutters as he sprints towards the southern path.";
@@ -477,7 +513,12 @@ After inputting 2302 into the Digital Lock:
 Inputting is an action applying to one number. 
 Understand "input [a number]" as inputting. 
 After inputting 2302: say "You hear a wonderful chiming sound as the screen fades to black and the Digital Lock opens .";
-		now the Gate is unlocked. 		
+		now the Gate is unlocked. 	
+Instead of inputting:
+	if the player is not holding keycard:
+		say "I don't see anything to input numbers into.";
+	otherwise:
+		continue the action. 	
 
 Instead of unlocking gate with Keycard when Digital Lock is switched on: say "You need to 'input a four digit code into the Digital Lock'. There's a hint below saying 'the last four digits'. If I thought the password maker was a minimalist, I might 'input 1111 into the Digital Lock'. ".
  
@@ -496,7 +537,7 @@ After opening gate:
 		say "'After awhile I panicked and hit you on the head with a rock. You fell unconcious but you still had a pulse so I wasn't worried that I'd suddenly become a murderer.";
 		say "'And I finally thought I'd be free, but you locked the gate… in two seperate ways. I was trapped.'";
 		say "'But after working together with you… I don't want to lie anymore. You forgive me right?'";	
-		end the game in victory;
+		end the game saying "Weeks later you prove Landon's innocence in the February Killings. But he's still the one who erased your memories. Do you think he's innocent?";
 	else:
 		say "As soon as you open the gate, Landon runs off into the distance without even a goodbye.";
 		move landon to offstage. 
