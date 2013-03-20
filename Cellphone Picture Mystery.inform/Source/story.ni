@@ -342,7 +342,7 @@ Instead of showing photo 3 to Landon:
 	increase friendship by 1;
 	say "You think you've bonded with Landon.". 
 	
-Instead of showing bush to Landon:
+Before showing bush to Landon:
 	say "'There was a saw under there before, but I couldn't get to it …because of certain circumstances.'". 
 
 Instead of showing saw to Landon:
@@ -529,7 +529,7 @@ Instead of unlocking gate with Keycard when Screen is switched off: say "As you 
 Street is a room.   
 Description of street is "Finally we've reached civilization. Maybe my phone actually gets reception here.".
 After opening gate:
-	If Friendship is greater than 4:
+	If Friendship is greater than 2:
 		say "As you enter a lonely street, you notice a worried look on Landon's face.";
 		say "'I may not have been completely honest about myself' he says.";
 		say "'Your name is Catherine Wright. You're a police officer. And I'm… I'm the prime suspect for the February Killings'";
